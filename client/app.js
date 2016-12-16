@@ -36,71 +36,71 @@ var BumbCase = require('./BumbCase.js')
 
 app.get('/userdata', function(req, res){
     var user = req.query.id
-        bank.returnid({
+        BumbCase.returnid({
                       from:user
                       },function(err, rid){
                       if(!err){
-                      bank.returnrecordNum({
+                      BumbCase.returnrecordNum({
                                            from:user
                                            },function(err,rrecordNum){
                                            if(!err){
-                                           bank.returnmyPlate({
+                                           BumbCase.returnmyPlate({
                                                               from:user
                                                               },function(err,rmyPlate){
                                                               if(!err){
-                                                              bank.returnotherPlate({
+                                                              BumbCase.returnotherPlate({
                                                                                     from:user
                                                                                     },function(err,rotherPlate){
                                                                                     if(!err){
-                                                                                    bank.returncondition({
+                                                                                    BumbCase.returncondition({
                                                                                                          from:user
                                                                                                          },function(err,rcondition){
                                                                                                          if(!err){
-                                                                                                         bank.returndate({
+                                                                                                         BumbCase.returndate({
                                                                                                                          from:user
                                                                                                                          },function(err,rdate){
                                                                                                                          if(!err){
-                                                                                                                         bank.returntime({
+                                                                                                                         BumbCase.returntime({
                                                                                                                                          from:user
                                                                                                                                          },function(err,rtime){
                                                                                                                                          if(!err){
-                                                                                                                                         bank.returnplace({
+                                                                                                                                         BumbCase.returnplace({
                                                                                                                                                           from:user
                                                                                                                                                           },function(err,rplace){
                                                                                                                                                           if(!err){
-                                                                                                                                                          bank.returnotherBehavior({
+                                                                                                                                                          BumbCase.returnotherBehavior({
                                                                                                                                                                                    from:user
                                                                                                                                                                                    },function(err,rotherBehavior){
                                                                                                                                                                                    if(!err){
-                                                                                                                                                                                   bank.returnmyBehavior({
+                                                                                                                                                                                   BumbCase.returnmyBehavior({
                                                                                                                                                                                                          from:user
                                                                                                                                                                                                          },function(err,rmyBehavior){
                                                                                                                                                                                                          if(!err){
-                                                                                                                                                                                                         bank.returnspeed({
+                                                                                                                                                                                                         BumbCase.returnspeed({
                                                                                                                                                                                                                           from:user
                                                                                                                                                                                                                           },function(err,rspeed){
                                                                                                                                                                                                                           if(!err){
-                                                                                                                                                                                                                          bank.returnroad({
+                                                                                                                                                                                                                          BumbCase.returnroad({
                                                                                                                                                                                                                                           from:user
                                                                                                                                                                                                                                           },function(err,rroad){
                                                                                                                                                                                                                                           if(!err){
-                                                                                                                                                                                                                                          bank.returnsign({
+                                                                                                                                                                                                                                          BumbCase.returnsign({
                                                                                                                                                                                                                                                           from:user
                                                                                                                                                                                                                                                           },function(err,rsign){
                                                                                                                                                                                                                                                           if(!err){
-                                                                                                                                                                                                                                                          bank.returnbroken({
+                                                                                                                                                                                                                                                          BumbCase.returnbroken({
                                                                                                                                                                                                                                                                             from:user
                                                                                                                                                                                                                                                                             },function(err,rbroken){
                                                                                                                                                                                                                                                                             if(!err){
-                                                                                                                                                                                                                                                                            bank.returnotherCond({
+                                                                                                                                                                                                                                                                            BumbCase.returnotherCond({
                                                                                                                                                                                                                                                                                                  from:user
                                                                                                                                                                                                                                                                                                  },function(err,rotherCond){
                                                                                                                                                                                                                                                                                                  if(!err){
-                                                                                                                                                                                                                                                                                                 bank.returnphoto({
+                                                                                                                                                                                                                                                                                                 BumbCase.returnphoto({
                                                                                                                                                                                                                                                                                                                   from:user
                                                                                                                                                                                                                                                                                                                   },function(err,rphoto){
                                                                                                                                                                                                                                                                                                                   if(!err){
-                                                                                                                                                                                                                                                                                                                  bank.returnnotes({
+                                                                                                                                                                                                                                                                                                                  BumbCase.returnnotes({
                                                                                                                                                                                                                                                                                                                                    from:user
                                                                                                                                                                                                                                                                                                                                    },function(err,rnotes){
                                                                                                                                                                                                                                                                                                                                    if(!err){
